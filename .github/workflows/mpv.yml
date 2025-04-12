@@ -1,32 +1,29 @@
 name: mpv
 
 permissions:
-    contents: write
+  contents: write
 
 on:
   push:
-      branches:
-        - master
-      paths:
-        - "docs/static/tutorials/mpv/portable_config/**/*.*"
-        - "docs/tutorials/mpv.md"
-        - ".github/workflows/mpv.yml"
+    paths:
+      - "docs/static/tutorials/mpv/portable_config/**/*.*"
+      - "docs/tutorials/mpv.md"
+      - ".github/workflows/mpv.yml"
   schedule:
     - cron: "0 0 * * *" # daily
   workflow_dispatch:
-     
 
 jobs:
   mpv:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
+      - name: Checkout repository
         uses: actions/checkout@v4
         with:
           sparse-checkout: docs/static/tutorials/mpv/portable_config
 
       - name: Download mpv
-        uses: robinraju/release-downloader@v1.8
+        uses: robinraju/release-downloader@v1
         with:
           repository: zhongfly/mpv-winbuild
           latest: true
@@ -38,7 +35,7 @@ jobs:
           echo "fullname=$(ls | grep mpv)" >> $GITHUB_OUTPUT
           echo "basename=$(ls | grep mpv | xargs -I {} basename {} .7z)" >> $GITHUB_OUTPUT
           echo "commit=$(ls | grep -oP '(?<=git-)[0-9a-fA-F]+')" >> $GITHUB_OUTPUT
-#         echo "date=$(ls | grep -oP '\d{8}')" >> $GITHUB_OUTPUT
+          # echo "date=$(ls | grep -oP '\d{8}')" >> $GITHUB_OUTPUT
 
       - name: Extract mpv archive
         run: 7z x ${{ steps.mpv-filename.outputs.fullname }} -o${{ steps.mpv-filename.outputs.basename }}
@@ -61,22 +58,20 @@ jobs:
       - name: Create release
         uses: ncipollo/release-action@v1
         with:
-            name: mpv
-            artifacts: ${{ steps.mpv-filename.outputs.fullname }}, portable_config.7z
-            allowUpdates: true
-            removeArtifacts: true
-            replacesArtifacts: true
-            makeLatest: true
-            tag: mpv
-            body: >
-              Pre-configured portable MPV based on [zhongfly's build](https://github.com/zhongfly/mpv-winbuild) using 
-              the [config](https://github.com/${{ github.repository }}/tree/master/docs/static/tutorials/mpv/portable_config) 
-              from [thewiki](https://thewiki.moe/tutorials/mpv/)
+          name: mpv
+          tag: mpv
+          makeLatest: true
+          allowUpdates: true
+          removeArtifacts: true
+          replacesArtifacts: true
+          artifacts: ${{ steps.mpv-filename.outputs.fullname }}, portable_config.7z
+          body: >
+            Pre-configured portable MPV based on [zhongfly's build](https://github.com/zhongfly/mpv-winbuild) using 
+            the [config](https://github.com/${{ github.repository }}/tree/master/docs/static/tutorials/mpv/portable_config) 
+            from [thewiki](https://thewiki.moe/tutorials/mpv/)
 
+            This release is updated daily using [this workflow](https://github.com/${{ github.repository }}/blob/master/.github/workflows/mpv.yml)
 
-              This release is updated daily using [this workflow](https://github.com/${{ github.repository }}/blob/master/.github/workflows/mpv.yml)
+            Based on: mpv-player/mpv@${{ steps.mpv-filename.outputs.commit }}
 
-
-              Based on: mpv-player/mpv@${{ steps.mpv-filename.outputs.commit }}
-
-              Logs: https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id}}
+            Logs: https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}
