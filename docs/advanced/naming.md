@@ -150,7 +150,7 @@ Anime.Name.S00E09.Title.of.the.Episode.1080p.BluRay.Opus2.0.x264-Hi10P-Group.mkv
 - Put `Group` tag at the end of the folder name to allow alphabetical sorting and easier parsing.
 - **Everything** that isn't an episode, e.g Creditless Intro/Outro, PVs, etc **must** be put in a subfolder called `Extras` (not `Extra`). Do **not** use subfolders like `NC`, `Creditless`, etc.
 - Special Episode/OVA must be put in the same folder if it's singular or a subfolder called `Specials` if there are multiple of them.
-- Anime that are a single season split between two cours, e.g. Eighty-Six aired in two cours, [cour 1](https://anilist.co/anime/116589/) and [cour 2](https://anilist.co/anime/131586/), but is a [single season](https://thetvdb.com/series/eighty-six/seasons/official/1), must be named in a way that satisfies both which is achieved by adding the episode range after the season info (`S0X`). For example, `Eighty-Six S01 E01-E11` and `Eighty-Six S01 E12-E23`.
+- Anime that are a single season split between two cours, e.g. Eighty-Six aired in two cours, [cour 1](https://anilist.co/anime/116589/86-Eighty-Six/) and [cour 2](https://anilist.co/anime/131586/86-Eighty-Six-Part-2/), but is a [single season](https://thetvdb.com/series/eighty-six/seasons/official/1), must be named in a way that satisfies both which is achieved by adding the episode range after the season info (`S0X`). For example, `Eighty-Six S01 E01-E11` and `Eighty-Six S01 E12-E23`.
 
 Examples:
 
