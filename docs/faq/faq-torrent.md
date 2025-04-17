@@ -13,11 +13,11 @@ Check out our [detailed torrenting guide](/getting-started/torrenting/), it's ve
 
 * Windows: [qBittorrent](https://www.qbittorrent.org/), [Deluge](https://deluge-torrent.org/)
 
-* macOS: [rTorrent](https://github.com/rakshasa/rtorrent), [Transmission](https://transmissionbt.com), [qBittorrent](https://www.qbittorrent.org), [Deluge](https://deluge-torrent.org/)
+* macOS: [rTorrent](https://github.com/rakshasa/rtorrent), [Transmission](https://transmissionbt.com/), [qBittorrent](https://www.qbittorrent.org/), [Deluge](https://deluge-torrent.org/)
 
-* *nix: [rTorrent](https://github.com/rakshasa/rtorrent), [Transmission](https://transmissionbt.com), [qBittorrent](https://www.qbittorrent.org), [Deluge](https://deluge-torrent.org/)
+* *nix: [rTorrent](https://github.com/rakshasa/rtorrent), [Transmission](https://transmissionbt.com/), [qBittorrent](https://www.qbittorrent.org), [Deluge](https://deluge-torrent.org/)
 
-* Android: [Flud](https://play.google.com/store/apps/details?id=com.delphicoder.flud&hl=en_US&gl=US), [LibreTorrent](https://play.google.com/store/apps/details?id=org.proninyaroslav.libretorrent&hl=en_US&gl=US)
+* Android: [Flud](https://play.google.com/store/apps/details?id=com.delphicoder.flud), [LibreTorrent](https://play.google.com/store/apps/details?id=org.proninyaroslav.libretorrent)
 
 !!!
 Do your own research on the clients you use but these are generally the most widely accepted clients. Keep in mind that some clients (such as newer versions of uTorrent and BitTorrent) have been known to be bundled with crypto miners and adware.
@@ -85,7 +85,7 @@ For those low on data or storage, HEVC mini encodes on Nyaa are the best option.
 
 ## Where can I download subtitles separately?
 
-[Animetosho](https://animetosho.org/) has subtitles and attachments for most torrents on nyaa. They can be downloaded by clicking the `all attachments` button at the bottom of any page. Remember that the included fonts are important for any fansub to display correctly. They can be installed, placed in the font directory for your player or muxed into the mkv.
+[Animetosho](https://animetosho.org/) has subtitles and attachments for most torrents on Nyaa. They can be downloaded by clicking the `all attachments` button at the bottom of any page. Remember that the included fonts are important for any fansub to display correctly. They can be installed, placed in the font directory for your player or muxed into the mkv.
 
 ## How can I add/remove subtitles or audio?
 
