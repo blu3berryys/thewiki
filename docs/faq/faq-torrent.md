@@ -15,7 +15,7 @@ Check out our [detailed torrenting guide](/getting-started/torrenting/), it's ve
 
 * macOS: [rTorrent](https://github.com/rakshasa/rtorrent), [Transmission](https://transmissionbt.com/), [qBittorrent](https://www.qbittorrent.org/), [Deluge](https://deluge-torrent.org/)
 
-* *nix: [rTorrent](https://github.com/rakshasa/rtorrent), [Transmission](https://transmissionbt.com/), [qBittorrent](https://www.qbittorrent.org), [Deluge](https://deluge-torrent.org/)
+* *nix: [rTorrent](https://github.com/rakshasa/rtorrent), [Transmission](https://transmissionbt.com/), [qBittorrent](https://www.qbittorrent.org/), [Deluge](https://deluge-torrent.org/)
 
 * Android: [Flud](https://play.google.com/store/apps/details?id=com.delphicoder.flud), [LibreTorrent](https://play.google.com/store/apps/details?id=org.proninyaroslav.libretorrent)
 
