@@ -7,7 +7,7 @@ order: -1
 
 ## Can I link to sites, torrents, or direct download links?
 
-All subreddits are governed by the [Reddit Content Policy](https://www.redditinc.com/policies/content-policy) which means we have to be careful with what we allow in order to keep our subreddit from being shutdown. 
+All subreddits are governed by the [Reddit Rules](https://redditinc.com/policies/reddit-rules) which means we have to be careful with what we allow in order to keep our subreddit from being shutdown. 
 
 * You may reference sites by name with or without the top level domain (many sites have a similar name with a different TLD), but we ask you do not link to them. 
 
@@ -43,7 +43,7 @@ For those low on data or storage, HEVC mini encodes on Nyaa are the best option.
 
 Streaming sites usually have (dub) in the title to differentiate dubs, the default version without a (dub) tag is the subbed one.
 
-Nyaa and torrents have something called dual audio where the mkv files include both japanese and english audio with accompanying subtitle tracks. All the dubs you'll find on Nyaa are dual audio. If it doesn't say dual audio then it's sub only.
+Nyaa and torrents have something called dual audio where the mkv files include both Japanese and English audio with accompanying subtitle tracks. All the dubs you'll find on Nyaa are dual audio. If it doesn't say dual audio then it's sub only.
 
 ## How long will I have to wait for the newest anime episode to be available on streaming sites and torrents?
 
@@ -55,9 +55,7 @@ Not every block is implemented the same, so the only way to figure out is by tri
 
 - If it's a DNS-based block, you may have success by simply changing your DNS servers to ones that aren't controlled by your ISP.
 
-
 - If it's a deep packet inspection (DPI) block, you may have some success with DPI circumvention tools such as [GoodbyeDPI](https://github.com/ValdikSS/GoodbyeDPI) or [PowerTunnel](https://github.com/krlvm/PowerTunnel-Android).
-
 
 - Otherwise, a VPN with servers in a country without censorship blocks will usually work. [Refer to our VPN FAQ section for more information](/faq/faq-vpn/).
 
@@ -66,23 +64,20 @@ Not every block is implemented the same, so the only way to figure out is by tri
 ## Where can I download high quality anime soundtracks?
 
 - Direct download:
-  - https://sukidesuost.info/   
+  - https://sukidesuost.info/
 
 - Torrent:
   - https://nyaa.si/
-  
+
   - https://nipponsei.minglong.org/releases/
 
 ## I don't like downloading, are there any streaming/podcast sites?
 
 - https://listen.moe/
-   
-
-- https://animemusic.org/
 
 
 - https://themes.moe/
-   
+
 
 - https://ostlist.netlify.app/
 
