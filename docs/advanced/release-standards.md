@@ -34,7 +34,7 @@ Unless you are making your own encode, you'll have to stick to the available opt
 ### Useful Tools
 
 - [eac3to](https://forum.doom9.org/showthread.php?t=125966) with [updated libraries](https://mega.nz/#!dFAmEC4Y!WMTQvzLkfTDHPfhTXURSLaFWbmDMVaq3dKfk4ucjYrI) for extracting and transcoding.
-- [SoX](http://sox.sourceforge.net/) for resampling and bit depth reduction.
+- [SoX](https://sourceforge.net/projects/sox/) for resampling and bit depth reduction.
 - [opus-tools](https://opus-codec.org/downloads/) for transcoding lossless audio to Opus.
 - [muxtools](https://github.com/Jaded-Encoding-Thaumaturgy/muxtools) is an automation package for everything related to encoding and subbing.
 - [acsuite](https://github.com/OrangeChannel/acsuite) for frame-based cutting/trimming/splicing of audio files using VapourSynth clip information.
@@ -63,7 +63,7 @@ Once you have eac3to with updated libraries, you can start with this simple comm
 eac3to ExampleAnime.mkv
 ```
 
-Or, if it's a BDMV
+Or, if it's a BDMV:
 
 ```batch
 eac3to /path/to/BDMV/
@@ -197,9 +197,9 @@ for file in *.flac; do opusenc --bitrate 192 "${file}" "${file%.*}.opus"; done
 - [arch1t3cht/Aegisub](https://github.com/arch1t3cht/Aegisub) for all subtitle work.
 - [muxtools](https://github.com/Jaded-Encoding-Thaumaturgy/muxtools) is an automation package for everything related to encoding and subbing.
 - [Myaamori-Aegisub-Scripts](https://github.com/TypesettingTools/Myaamori-Aegisub-Scripts) includes several helpful scripts for processing `.ASS` subtitles.
-- [Prass](https://github.com/tp7/Prass) is another Console processor for `.ASS` subtitles.
+- [Prass](https://github.com/tp7/Prass) is another console processor for `.ASS` subtitles.
 - [tp7/Sushi](https://github.com/tp7/Sushi) is an automatic subtitle shifter based on audio.
-- [FichteFoll/Sushi](https://github.com/FichteFoll/Sushi) is the python 3 fork of [tp7/Sushi](https://github.com/tp7/Sushi).
+- [FichteFoll/Sushi](https://github.com/FichteFoll/Sushi) is the Python 3 fork of [tp7/Sushi](https://github.com/tp7/Sushi).
 
 ### General
 
