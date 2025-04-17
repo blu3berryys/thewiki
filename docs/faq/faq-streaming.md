@@ -19,7 +19,7 @@ If you're looking for a streaming site or app, check out [the index](https://the
 
 ## Which official streaming sites are available for me?
 
-This depends on which region you are in due to licensing. [/r/anime offers an extensive list on their wiki of what streaming services are available for which regions](https://www.reddit.com/r/anime/wiki/legal_streams).
+This depends on which region you are in due to licensing. [/r/anime offers an extensive list on their wiki of what streaming services are available for which regions](https://www.reddit.com/r/anime/wiki/legal_streams/).
 
 ## Which websites offer subs/dubs, downloads, 320/480/720/1080p, or are ad-free?
 
