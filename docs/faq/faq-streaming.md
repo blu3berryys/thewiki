@@ -9,7 +9,7 @@ order: -3
 
 You can do so by go to [our Discord](https://discord.gg/snackbox) and fill in the form in the `#index` channel.
 
-## Do I need a VPN to stream ?
+## Do I need a VPN to stream?
 
 No, you do not need a VPN to stream content from streaming sites,
 
