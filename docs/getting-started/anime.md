@@ -14,16 +14,16 @@ There are multiple ways you can start watching anime, depending on your preferen
 ### Streaming
 
 !!!
-*See [The Index](https://theindex.moe) for a comprehensive list of unofficial anime streaming sites.*
+*See [The Index](https://theindex.moe/) for a comprehensive list of unofficial anime streaming sites.*
 
-Looking for official streaming sites? *See [r/anime's list of legal streams](https://www.reddit.com/r/anime/wiki/legal_streams).*
+Looking for official streaming sites? *See [r/anime's list of legal streams](https://www.reddit.com/r/anime/wiki/legal_streams/).*
 !!!
 
 Streaming involves retrieving and playing back content in real-time directly from a server without the need to download the entire file beforehand.
 
-Streaming sites can be easily accessed access across all of your devices. They are often easy to use and navigate, making it easy to start watching without having to worry about additional setup or configuration. Some streaming services will also have dedicated applications for a more fluent user experience, such as [Crunchyroll](https://www.crunchyroll.com).
+Streaming sites can be easily accessed access across all of your devices. They are often easy to use and navigate, making it easy to start watching without having to worry about additional setup or configuration. Some streaming services will also have dedicated applications for a more fluent user experience, such as [Crunchyroll](https://www.crunchyroll.com/).
 
-However, most streaming sites will compress the video and audio to save bandwidth. Though this may negligible on official streaming sites, unofficial streaming sites will tend to heavily compress video and audio, combined with intrusive ads/pop-ups across the site. *If you plan to use these sites, we suggest using a reliable content blocker, such as [uBlock Origin](https://ublockorigin.com).*
+However, most streaming sites will compress the video and audio to save bandwidth. Though this may negligible on official streaming sites, unofficial streaming sites will tend to heavily compress video and audio, combined with intrusive ads/pop-ups across the site. *If you plan to use these sites, we suggest using a reliable content blocker, such as [uBlock Origin](https://ublockorigin.com/).*
 
 If you like convenience, streaming sites can be a perfectly fine option for your watching needs. They offer access to a large library of shows with ease and do not require much technical knowledge to get started. *If you want to consider streaming, we suggest starting by looking at [various quality comparisons](/guides/quality/#quality-comparisons) to see whether it is fine for you.*
 
@@ -107,9 +107,9 @@ The following players are **not recommended** and should be avoided:
 
 +++ :tv: TV/Media Servers
 
-- [Kodi](https://kodi.tv) [!badge icon=":heart:" variant="primary" text="Recommended"]
-- [Plex](https://www.plex.tv) [!badge icon=":heart:" variant="primary" text="Recommended"]
-- [Jellyfin](https://jellyfin.org)
+- [Kodi](https://kodi.tv/) [!badge icon=":heart:" variant="primary" text="Recommended"]
+- [Plex](https://www.plex.tv/) [!badge icon=":heart:" variant="primary" text="Recommended"]
+- [Jellyfin](https://jellyfin.org/)
 
 +++
 
