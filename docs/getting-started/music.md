@@ -11,9 +11,7 @@ author:
 
 ## Content Resources
 
-- [Soulseek](http://www.slsknet.org/news/) - P2P network where people share music files of their own. Great way to find lossless music and a lot of relevant music.
-
-- [Redacted](https://redacted.ch/) - Commonly referred to as RED, it's the best source for music, and has everything in both FLAC and MP3. It's a private tracker, meaning you'll have to go through an [IRC Interview](https://interviewfor.red/en/index.html) to join. Thoroughly read the interview page.
+- [Soulseek](https://www.slsknet.org/news/) - P2P network where people share music files of their own. Great way to find lossless music and a lot of relevant music.
 
 - [Orpheus](https://orpheus.network/) - Another music private tracker like RED. Music selection is smaller than RED but it's easier to join with a more lenient economy. You'll have to go through an [IRC Interview](https://interview.orpheus.network/) to join this as well. Again, thoroughly read the interview page.
 
@@ -37,7 +35,7 @@ Do not under any circumstances ask people to invite you. This is forbidden by pr
   
   +++
 
-- (Recommended) Spectrogram generation can be achieved using popular audio command-line utility [SoX](https://sourceforge.net/projects/sox/files/sox/14.4.2/). Some basic options to generate spectrograms like the ones shown above are:
+- (Recommended) Spectrogram generation can be achieved using popular audio command-line utility [SoX](https://sourceforge.net/projects/sox/). Some basic options to generate spectrograms like the ones shown above are:
 
   +++ Full Size
   
@@ -68,7 +66,7 @@ Do not under any circumstances ask people to invite you. This is forbidden by pr
   ```
 
   ```shell
-    for file in *.flac; do sox "${file}" -n remix 1 spectrogram -X 500 -y 1025 -z 120 -w Kaiser -S 1:00 -d 0:02 -o "${file%.*}-zoom.png"; done
+  for file in *.flac; do sox "${file}" -n remix 1 spectrogram -X 500 -y 1025 -z 120 -w Kaiser -S 1:00 -d 0:02 -o "${file%.*}-zoom.png"; done
   ```
 
   +++
@@ -81,4 +79,4 @@ Do not under any circumstances ask people to invite you. This is forbidden by pr
 
 - [The Mega Music Ripping Guide](https://ori5000.github.io/musicripping.html) guide containing instructions on how to rip music from a variety of different popular sources.
 
-- [Sharky's Music Google Docs](https://docs.google.com/document/d/1Poj4p2W0C0Napmwd7bcustlgWrkgp71dy9HlZwUr46w/edit) is a massive document containing all sorts of tutorials and explanations for commonly-seen aspects of music ripping and uploading.
+- [Sharky's Music Google Docs](https://docs.google.com/document/d/1Poj4p2W0C0Napmwd7bcustlgWrkgp71dy9HlZwUr46w/edit?usp=sharing) is a massive document containing all sorts of tutorials and explanations for commonly-seen aspects of music ripping and uploading. Not updated anymore.
