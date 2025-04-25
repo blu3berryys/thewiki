@@ -16,10 +16,6 @@ The only VPNs that should be considered safe are paid VPNs that claim that they 
 TorrentFreak's [Which VPN Providers Really Take Privacy Seriously in 2021?](https://torrentfreak.com/best-vpn-anonymous-no-logging/) can also be used as a point of reference for paid VPNs feature comparison.
 
 !!!warning Warning
-[That One Privacy Site](https://thatoneprivacysite.net/) was sold to a third party and is no longer a trustworthy source for VPN comparison.
-!!!
-
-!!!warning Warning
 Take the top Google search results with a grain of salt - those reviews are often times have affiliations with the service per se.
 !!!
 
