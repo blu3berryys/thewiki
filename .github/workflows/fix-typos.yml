@@ -1,0 +1,28 @@
+name: Fix typos
+
+on:
+  push:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+env:
+  CLICOLOR: 1
+
+jobs:
+  fix-typos:
+    name: Fix typos
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Fix typos
+        uses: crate-ci/typos@v1
+        with:
+          write_changes: true
+
+      - name: Create pull request
+        uses: peter-evans/create-pull-request@v7
