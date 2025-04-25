@@ -13,8 +13,8 @@ image: /static/literature/kujou.gif
 
 +++ Downloads
 
-[Nyaa](https://nyaa.si) [!badge icon=":heart:" variant="primary" text="Recommended"]
-:   Public torrent tracker with the most high-quality official digital rips
+[Nyaa](https://nyaa.si/) [!badge icon=":heart:" variant="primary" text="Recommended"]
+:   Public torrent tracker with the most high-quality official digital rips.
 
     Scanlations can also be found here, though significantly less than aggregator sites.
 
@@ -23,19 +23,19 @@ image: /static/literature/kujou.gif
     - **Scanlation Rips:** Search for both the English and Japanese/native title by [adding the `|` operator](/sourcing/public-trackers/#search-operators) in between (e.g. `Attack on Titan|Shingeki no Kyojin`) and sort by file size. Although these can be significantly lower in quality, note that not all manga get official digital releases and scanlations may be your only option.
     ==-
 
-[AnimeBytes](https://animebytes.tv) [!badge icon="lock" variant="danger" text="Private"]
+[AnimeBytes](https://animebytes.tv/) [!badge icon="lock" variant="danger" text="Private"]
 :   Private torrent tracker with better organisation, retention, and access to older rips.
 
 +++ Aggregators
 
 [ComicK](https://comick.io/)
-:   Browser aggregator with the least compressed official rips
+:   Browser aggregator with the least compressed official rips.
 
-[MangaDex](https://mangadex.org)
-:   Browser aggregator with the most convenient scanlations
+[MangaDex](https://mangadex.org/)
+:   Browser aggregator with the most convenient scanlations.
 
-[MangaLife](https://manga4life.com)/[MangaSee](https://mangasee123.com)
-:   Browser aggregator with the most convenient official rips
+[Weeb Central](https://weebcentral.com/)
+:   Browser aggregator with the most convenient official rips.
 
 !!!
 Aggregators use downscaled and compressed images, resulting in lower image quality than digital rips.
@@ -48,7 +48,7 @@ Aggregators use downscaled and compressed images, resulting in lower image quali
 +++ PC
 
 [mpv](https://mpv.io/installation/) [!badge icon=":heart:" variant="primary" text="Best Quality"]
-:   Standalone reader with the highest quality scaling on PC
+:   Standalone reader with the highest quality scaling on PC.
 
     This should be used with the [mpv-manga-reader script](https://github.com/Dudemanguy/mpv-manga-reader) in order to enable basic manga reader functionality. *See [how to install custom scripts in mpv](/tutorials/mpv/#custom-scripts).*
 
@@ -76,7 +76,7 @@ Aggregators use downscaled and compressed images, resulting in lower image quali
     
     The [touch-manga-mpv](https://github.com/guyman624/touch-manga-mpv) script allows for page turning and black level adjustment with touch gestures.
     
-    There are also third party programs, such as [GestureSign](https://gesturesign.win), which allow you to convert gestures to keypresses ([example setup](/static/literature/gesturesign-example.png)).  
+    There are also third party programs, such as [GestureSign](https://gesturesign.win/), which allow you to convert gestures to keypresses ([example setup](/static/literature/gesturesign-example.png)).  
     You should also add the following into your `mpv.conf` to avoid triggering the OSD when swiping:
     ```properties
     no-osc
@@ -85,10 +85,10 @@ Aggregators use downscaled and compressed images, resulting in lower image quali
     ==-
 
 [Suwayomi](https://github.com/Suwayomi/Suwayomi-Server) [!badge variant="secondary" text="Most Convenient"]
-:   All-in-one manga reader server with support for external sources and manga trackers
+:   All-in-one manga reader server with support for external sources and manga trackers.
 
-[CDisplayEx](https://www.cdisplayex.com)
-:   Standalone reader with the [second highest quality scaling](https://slow.pics/c/y737QBlP) on PC
+[CDisplayEx](https://www.cdisplayex.com/)
+:   Standalone reader with the [second highest quality scaling](https://slow.pics/c/y737QBlP) on PC.
 
     ==- :icon-file-media: Recommended scaling settings
     To get the best quality, set the [*Resizing Algorithm to Lanczos*](/static/literature/cdisplayex-scaling.png) and the [*Lanczos quality slider to level 2*](/static/literature/cdisplayex-scaling2.png).
@@ -103,39 +103,39 @@ Aggregators use downscaled and compressed images, resulting in lower image quali
 +++ Android
 
 [Perfect Viewer](https://play.google.com/store/apps/details?id=com.rookiestudio.perfectviewer) [!badge icon=":heart:" variant="primary" text="Best Quality"]
-:   Standalone reader with the [highest quality scaling](https://slow.pics/c/y737QBlP) on Android
+:   Standalone reader with the [highest quality scaling](https://slow.pics/c/y737QBlP) on Android.
 
     !!!
     To get the best quality, set the [Image smooth filter to *Lanczos3*](/static/literature/perfect-viewer-scaling.png).
     !!!
 
-[Komelia](https://github.com/Snd-R/Komelia/releases) [!badge icon=":heart:" variant="primary" text="Best Quality"]
-:   Komga reader with the [highest quality scaling](https://slow.pics/c/77QVUJoN) on Android
+[Komelia](https://github.com/Snd-R/Komelia) [!badge icon=":heart:" variant="primary" text="Best Quality"]
+:   Komga reader with the [highest quality scaling](https://slow.pics/c/77QVUJoN) on Android.
 
 [Mihon](https://github.com/mihonapp/mihon) [!badge variant="secondary" text="Most Convenient"]
-:   All-in-one manga reader with support for external sources and manga trackers
+:   All-in-one manga reader with support for external sources and manga trackers.
 
 +++ iOS
 
 [iComics](https://apps.apple.com/app/icomics/id493845493) [!badge icon=":heart:" variant="primary" text="Best Quality"]
-:   Standalone reader with the [highest quality scaling](https://slow.pics/c/5JzAn5w7) on iOS
+:   Standalone reader with the [highest quality scaling](https://slow.pics/c/5JzAn5w7) on iOS.
 
-[Aidoku](https://aidoku.app) [!badge variant="secondary" text="Most Convenient"]
+[Aidoku](https://aidoku.app/) [!badge variant="secondary" text="Most Convenient"]
 :   All-in-one manga reader with support for external sources and manga trackers. *Requires TestFlight or sideloading*
 
-[Paperback](https://paperback.moe)
-:   All-in-one manga reader with support for external sources
+[Paperback](https://paperback.moe/)
+:   All-in-one manga reader with support for external sources.
 
 +++ Media Servers
 
-[Kavita](https://www.kavitareader.com)
-:   Free and open-source manga, comic, and book server. *Includes an integrated web reader and support for OPDS (e.g. [CDisplayEx](https://www.cdisplayex.com), [Perfect Viewer](https://play.google.com/store/apps/details?id=com.rookiestudio.perfectviewer))*
+[Kavita](https://www.kavitareader.com/)
+:   Free and open-source manga, comic, and book server. *Includes an integrated web reader and support for OPDS (e.g. [CDisplayEx](https://www.cdisplayex.com/), [Perfect Viewer](https://play.google.com/store/apps/details?id=com.rookiestudio.perfectviewer)).*
 
-[Komga](https://komga.org)
-:   Free and open-source manga server. *Includes an integrated web reader support for OPDS (e.g. [CDisplayEx](https://www.cdisplayex.com), [Perfect Viewer](https://play.google.com/store/apps/details?id=com.rookiestudio.perfectviewer))*
+[Komga](https://komga.org/)
+:   Free and open-source manga server. *Includes an integrated web reader support for OPDS (e.g. [CDisplayEx](https://www.cdisplayex.com/), [Perfect Viewer](https://play.google.com/store/apps/details?id=com.rookiestudio.perfectviewer)).*
 
     !!!secondary
-    See [Readers](https://komga.org/docs/category/readers) on Komga docs to set it up with your existing reading client.
+    See [Readers](https://komga.org/docs/category/readers/) on Komga docs to set it up with your existing reading client.
     !!!
 
 +++
@@ -146,11 +146,11 @@ Aggregators use downscaled and compressed images, resulting in lower image quali
 
 +++ Downloads
 
-[Nyaa](https://nyaa.si) [!badge icon=":heart:" variant="primary" text="Recommended"]
-:   Public torrent tracker with the most high-quality light novel rips
+[Nyaa](https://nyaa.si/) [!badge icon=":heart:" variant="primary" text="Recommended"]
+:   Public torrent tracker with the most high-quality light novel rips.
 
-[AnimeBytes](https://animebytes.tv) [!badge icon="lock" variant="danger" text="Private"]
-:   Private torrent tracker with a more organized layout and access to old and rare rips
+[AnimeBytes](https://animebytes.tv/) [!badge icon="lock" variant="danger" text="Private"]
+:   Private torrent tracker with a more organized layout and access to old and rare rips.
 
 +++
 
@@ -158,18 +158,18 @@ Aggregators use downscaled and compressed images, resulting in lower image quali
 
 +++ PC
 
-[Calibre](https://calibre-ebook.com)
-:   Standalone reader with support for various file types and includes additional e-book management features
+[Calibre](https://calibre-ebook.com/)
+:   Standalone reader with support for various file types and includes additional e-book management features.
 
-[Sumatra PDF](https://www.sumatrapdfreader.org)
-:   Standalone reader with support for various file types
+[Sumatra PDF](https://www.sumatrapdfreader.org/)
+:   Standalone reader with support for various file types.
 
 +++ Android
 
 [Moon+ Reader](https://play.google.com/store/apps/details?id=com.flyersoft.moonreader)
-:   Standalone reader with support for various file types
+:   Standalone reader with support for various file types.
 
 [LNReader](https://github.com/LNReader/lnreader)
-:   All-in-one light novel reader with support for external sources
+:   All-in-one light novel reader with support for external sources.
 
 +++
