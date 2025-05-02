@@ -45,7 +45,7 @@ jobs:
 
       - name: Recompress mpv and config
         run: |
-          7z a "${{ steps.mpv-extract.outputs.fullname }}" "${{ steps.mpv-extract.outputs.basename }}" -mx3
+          7z a "${{ steps.mpv-extract.outputs.fullname }}" "${{ steps.mpv-extract.outputs.basename }}" -m0=lzma2 -mx9 -mmt=on -md=512m -ms=on
           7z a portable_config.7z docs/static/tutorials/mpv/portable_config -mx3
 
       - name: Create release
