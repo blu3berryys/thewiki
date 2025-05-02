@@ -10,7 +10,7 @@ on:
       - "docs/tutorials/mpv.md"
       - ".github/workflows/mpv.yml"
   schedule:
-    - cron: "0 0 * * *" # daily
+    - cron: "0 0 * * *"
   workflow_dispatch:
 
 jobs:
@@ -20,7 +20,9 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
-          sparse-checkout: docs/static/tutorials/mpv/portable_config
+          sparse-checkout: |
+            docs/static/tutorials/mpv/portable_config
+          fetch-depth: 1
 
       - name: Download mpv
         uses: robinraju/release-downloader@v1
@@ -29,32 +31,23 @@ jobs:
           latest: true
           fileName: "mpv-x86_64-20*-git-*.7z"
 
-      - name: Get the filename of the mpv archive
-        id: mpv-filename
+      - name: Prepare and extract mpv
+        id: mpv-extract
         run: |
-          echo "fullname=$(ls | grep mpv)" >> $GITHUB_OUTPUT
-          echo "basename=$(ls | grep mpv | xargs -I {} basename {} .7z)" >> $GITHUB_OUTPUT
-          echo "commit=$(ls | grep -oP '(?<=git-)[0-9a-fA-F]+')" >> $GITHUB_OUTPUT
-          # echo "date=$(ls | grep -oP '\d{8}')" >> $GITHUB_OUTPUT
+          archive=$(ls mpv-*.7z)
+          base=$(basename "$archive" .7z)
+          commit=$(echo "$archive" | grep -oP '(?<=git-)[0-9a-fA-F]+')
+          7z x "$archive" -o"$base"
+          cp -r docs/static/tutorials/mpv/portable_config "$base/portable_config"
+          echo "fullname=$archive" >> $GITHUB_OUTPUT
+          echo "basename=$base" >> $GITHUB_OUTPUT
+          echo "commit=$commit" >> $GITHUB_OUTPUT
 
-      - name: Extract mpv archive
-        run: 7z x ${{ steps.mpv-filename.outputs.fullname }} -o${{ steps.mpv-filename.outputs.basename }}
-
-      - name: Copy portable config to the extracted mpv folder
-        run: cp -r "docs/static/tutorials/mpv/portable_config" "${{ steps.mpv-filename.outputs.basename }}/portable_config"
-
-      - name: Remove the original mpv archive
-        run: rm ${{ steps.mpv-filename.outputs.fullname }}
-    
-      - name: Compress mpv using 7zip
-        run: 7z a ${{ steps.mpv-filename.outputs.fullname }} ${{ steps.mpv-filename.outputs.basename }} -mx9
-
-      - name: Compress portable_config using 7zip
+      - name: Recompress mpv and config
         run: |
-          cd docs/static/tutorials/mpv
-          7z a portable_config.7z portable_config -mx9
-          mv portable_config.7z ${{ github.workspace }}
-    
+          7z a "${{ steps.mpv-extract.outputs.fullname }}" "${{ steps.mpv-extract.outputs.basename }}" -mx3
+          7z a portable_config.7z docs/static/tutorials/mpv/portable_config -mx3
+
       - name: Create release
         uses: ncipollo/release-action@v1
         with:
@@ -62,16 +55,15 @@ jobs:
           tag: mpv
           makeLatest: true
           allowUpdates: true
-          removeArtifacts: true
           replacesArtifacts: true
-          artifacts: ${{ steps.mpv-filename.outputs.fullname }}, portable_config.7z
-          body: >
+          artifacts: ${{ steps.mpv-extract.outputs.fullname }}, portable_config.7z
+          body: |
             Pre-configured portable MPV based on [zhongfly's build](https://github.com/zhongfly/mpv-winbuild) using 
             the [config](https://github.com/${{ github.repository }}/tree/master/docs/static/tutorials/mpv/portable_config) 
             from [thewiki](https://thewiki.moe/tutorials/mpv/)
 
             This release is updated daily using [this workflow](https://github.com/${{ github.repository }}/blob/master/.github/workflows/mpv.yml)
 
-            Based on: mpv-player/mpv@${{ steps.mpv-filename.outputs.commit }}
+            Based on: mpv-player/mpv@${{ steps.mpv-extract.outputs.commit }}
 
             Logs: https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}
